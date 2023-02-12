@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import RouteUrls from "./helpers/routeUrls";
+import Wrapper from "./helpers/wrapper";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <div className="App">
+        <main className="md:max-w-7xl mx-auto max-w-full flex justify-center items-center h-screen">
+          <div>
+            <RouteUrls />
+          </div>
+        </main>
+      </div>
+    </Wrapper>
   );
 }
 
